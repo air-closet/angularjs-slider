@@ -1243,7 +1243,7 @@ function throttle(func, wait, options) {
   return Slider;
 }])
 
-.directive('rzslider', ['RzSlider', $templateCache, function(Slider, $templateCache)
+.directive('rzslider', ['RzSlider', '$templateCache', function(Slider, $templateCache)
 {
   'use strict';
 
