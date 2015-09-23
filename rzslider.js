@@ -1273,9 +1273,9 @@ function throttle(func, wait, options) {
      * @param {*} attrs
      * @return {string}
      */
-    templateUrl: function(elem, attrs) {
+    template: function(elem, attrs) {
       //noinspection JSUnresolvedVariable
-      return attrs.rzSliderTplUrl || 'rzSliderTpl.html';
+      return $templateCache.get('rzSliderTpl.html');
     },
 
     link: function(scope, elem, attr)
